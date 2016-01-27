@@ -81,8 +81,7 @@
     </div><!-- /.modal -->
 </div>
 <script>
-    $('.navbar-toggler').click(function(event){
-       this.css('color','red');
+    $('.navbar-toggler').click($.css('color','red');
     })
 </script>
 </body>
