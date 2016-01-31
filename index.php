@@ -14,15 +14,22 @@
     <script src="dist/js/myscript.js"></script>
 </head>
 <body class="">
-    <div class="nav navbar-light bg-inverse ">
-        <button class="navbar-toggler pull-right" data-toggle="collapse" data-target="#collapsingNav">
-            &#9776;
-        </button>
-        <a class="navbar-brand" type="button" href="index.php">Кейк плюс</a>
-        </div>
-<div class="collapse bg-inverse p-a-1" id="collapsingNav">
-    <h3 >контент</h3>
-</div>
+<nav class="navbar navbar-full bg-inverse">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+        &#9776;
+    </button>
+    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+        <a class="navbar-brand" href="#">Кейк плюс</a>
+        <ul class="nav  navbar-nav ">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Торты на заказ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 <div class="container">
 <div >
