@@ -70,7 +70,7 @@
         <p >
             Нажмите на кнопку  "Измениь" что бы увидеть результат.
         </p>
-        <button class="btn btn-secondary-outline" type="button" onclick="setColor()">Изменить</button>
+        <button class="btn btn-secondary-outline" type="button" onclick="animeM()">Изменить</button>
     </div>
     <div class="modal fade" id="MyModal">
           <div class="modal-dialog" role="document">
@@ -95,7 +95,6 @@
 </div>
 </div>
 <script>
-    $('.navbar-toggler').click($.css('color','red');
-    })
+
 </script>
 </body>
