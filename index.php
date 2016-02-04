@@ -13,7 +13,7 @@
     <script src="dist/js/bootstrap.js"></script>
     <script src="dist/js/myscript.js"></script>
 </head>
-<body class="">
+<body>
 <nav class="navbar navbar-full bg-inverse">
     <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
         &#9776;
@@ -59,14 +59,15 @@
              </div>
         </div>
     </div>
-<div class="col-lg-12 bg-inverse">
+<div class="col-lg-12">
 
     <div class="col-lg-6 col-md-6 col-sm-12 bg-info ">
         <p >
             Нажмите на кнопку  "Модальное" что бы увидеть модальное окно.
         </p>
         <button class="btn btn-secondary-outline" type="button" data-toggle="modal" data-target="#MyModal">Модальное</button>
-    </div><div class="col-lg-6 col-md-6 col-sm-12 ">
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 ">
         <p >
             Нажмите на кнопку  "Измениь" что бы увидеть результат.
         </p>
@@ -83,6 +84,13 @@
               </div>
               <div class="modal-body">
                 <p>Контент модального окна &hellip;</p>
+                  <div class="form" >
+                      <form method="get" action="" name="modalContent">
+                          <input type="text" name="modText" value="Введи что нибудь">
+                          <input type="date" name="modDate"><br>
+                          <button type="button" class="file btn btn-primary-outline btn-sm" aria-labelledby="File"><span aria-hidden="true">&bkarow;</span> </button>
+                      </form>
+                  </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Отменить</button>
@@ -93,8 +101,18 @@
     </div><!-- /.modal -->
 </div>
 </div>
-</div>
+
 <script>
+     // необходимо переделать
+     myVar = getElementsByClassName('col-lg-6');
+    if(myVar == true){
+        myVar.css({
+            background:"red",
+            color:"green"
+        })else{
+            alert("Не найден элемент с классом \"col-lg-6\"");
+        }
+    }
 
 </script>
 </body>
