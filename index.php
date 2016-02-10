@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="dist/css/bootstrap.css">
     <link rel="stylesheet" href="dist/css/myStyle.css">
-    <script src="dist/js/jquery-2.1.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="dist/js/bootstrap.js"></script>
     <script src="dist/js/myscript.js"></script>
 </head>
@@ -18,6 +18,7 @@
     <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
         &#9776;
     </button>
+
     <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
         <a class="navbar-brand" href="#">Кейк плюс</a>
         <ul class="nav  navbar-nav ">
@@ -31,10 +32,13 @@
     </div>
 </nav>
 
-<div class="container">
-<div >
-    <h1 class="text-lg-center text-md-center">Заголовок страницы</h1>
-</div>
+<div class="container-fluid bg-faded">
+
+    <header>
+        <div >
+        <h1 class="text-lg-center text-md-center p-a-2">Заголовок страницы</h1>
+        </div>
+    </header>
     <hr>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
@@ -65,7 +69,7 @@
         <p >
             Нажмите на кнопку  "Измениь" что бы увидеть результат.
         </p>
-        <button class="btn btn-secondary-outline" type="button" onclick="setColor()">Изменить</button>
+        <button class="btn btn-block" type="button" onclick="setColor()">Изменить</button>
     </div>
     <div class="modal fade" id="MyModal">
           <div class="modal-dialog" role="document">
@@ -87,8 +91,37 @@
           </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 </div>
+<div class="col-lg-12 bg-inverse">
+    <div class="col-lg-4 col-lg-offset-4 p-t-1">
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum.
+         </p>
+        <button type="button" class="btn btn-primary" onclick="opac()" aria-hidden="true">Push</button>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 bg-faded">
+    <form  class="" action="phpaction.php" name="test_form" method="post">
+        <div class="input-group">
+            <input  type="email" name="adreses" id="mailID" >
+            <input type="button" class="btn btn-primary" value="Отправить"><span class="input-group-btn"></span>
+            <label for="mailID">Введите адресс</label>
+        </div>
+    </form>
+</div>
 <script>
-    $('.navbar-toggler').click($.css('color','red');
-    })
+    var a =10;
+    var myFunc = function(){
+        var b = 20;
+        var c = 8;
+        return function (){
+            return((a+b)/c);
+        };
+    };
+var anoverFunc = myFunc();
+    console.log(anoverFunc());
 </script>
 </body>
