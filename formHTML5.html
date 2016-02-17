@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Form in HTML5</title>
+    <link rel="stylesheet" href="dist/css/forForms.css">
+
+</head>
+<body>
+<form method="post" action="/project/">
+    <fieldset id="personal_information">
+        <legend>Projekt information</legend>
+        <ol>
+            <li>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </li>
+            <li>
+                <label for="priority">Priority</label>
+                <input type="range" min="0" max="10" name="priority" value="0" id="priority">
+            </li>
+            <li>
+                <label for="estimated_hours">Estimated Hours</label>
+                <input type="number" name="estimated_hours" min="0" max="1000" id="estimated_hours">
+            </li>
+            <li>
+                <label for="start_date">Start Date</label>
+                <input type="date" name="start_date" id="start_date" value="2016-02-14">
+            </li>
+            <li>
+                <label for="email">Email contact</label>
+                <input type="email" name="email" id="email">
+            </li>
+            <li>
+                <label for="url">Starting URL</label>
+                <input type="url" name="url" id="url">
+            </li>
+            <li>
+                <label for="projekt_color">Projekt Color</label>
+                <input type="color" name="project_color" id="projekt_color">
+            </li>
+            <li>
+                <input type="submit" value="Submit">
+            </li>
+        </ol>
+    </fieldset>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>
+    function hasColorSupport(){
+        element.createElement("input");
+        element.createAttribute('type','color');
+        var hasColorType = (input.type === "color");
+        if(hasColorType){
+            var testString = 'foo';
+            element.value = testString;
+            hasColorType= (input.value != testString);
+        }
+        return (hasColorType);
+    }
+</script>
+</body>
+</html>
