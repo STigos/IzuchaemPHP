@@ -25,7 +25,7 @@
                 <a class="nav-link" href="test.html" >AwesomeCo Blog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Контакты</a>
+                <a class="nav-link" href="formHTML5.html">Контакты</a>
             </li>
         </ul>
     </div>
